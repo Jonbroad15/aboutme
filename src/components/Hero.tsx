@@ -53,7 +53,7 @@ const Hero = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight mb-4">
-              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Jonathan</span>
+              Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-700 to-slate-900 dark:from-slate-200 dark:to-white">Jonathan</span>
             </h1>
 
             <div className="text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-600 dark:text-slate-300 mb-6 h-12">

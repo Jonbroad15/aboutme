@@ -77,7 +77,7 @@ const Contact = () => {
           <h2 className={`text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             Get In <span className="text-blue-600 dark:text-blue-400">Touch</span>
           </h2>
-          <div className={`w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}></div>
+          <div className={`w-20 h-1 bg-slate-900 dark:bg-white mx-auto rounded-full transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}></div>
           <p className={`mt-6 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             Interested in discussing computational biology, AI in healthcare, or data science opportunities? I'd be happy to connect.
           </p>
@@ -95,7 +95,7 @@ const Contact = () => {
                   <a
                     key={index}
                     href={info.href}
-                    className="flex items-center gap-4 p-4 bg-slate-50 dark:bg-slate-900 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors group"
+                    className="flex items-center gap-4 p-4 bg-slate-50 dark:bg-slate-900 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors group"
                   >
                     <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg group-hover:bg-blue-200 dark:group-hover:bg-blue-800/30 transition-colors">
                       <info.icon className="w-6 h-6 text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors" />
@@ -121,7 +121,7 @@ const Contact = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-white/20 rounded-lg hover:bg-white/30 transition-colors"
+                    className="p-3 bg-white/10 dark:bg-slate-900/10 rounded-lg hover:bg-white/20 dark:hover:bg-slate-900/20 transition-colors"
                     aria-label={social.label}
                   >
                     <social.icon className="w-6 h-6 text-white" />
