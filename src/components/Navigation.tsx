@@ -18,7 +18,7 @@ const Navigation = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Education', href: '#education' },
+    { name: 'Publications', href: '#publications' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -29,7 +29,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#" className="text-xl font-bold text-slate-900 dark:text-white">
-            JB<span className="text-slate-600 dark:text-slate-400">.</span>
+            JB<span className="text-blue-600 dark:text-blue-400">.</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -38,7 +38,7 @@ const Navigation = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-medium transition-colors"
+                className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors"
               >
                 {link.name}
               </a>
@@ -64,7 +64,7 @@ const Navigation = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white font-medium py-2"
+                className="block text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 font-medium py-2"
               >
                 {link.name}
               </a>

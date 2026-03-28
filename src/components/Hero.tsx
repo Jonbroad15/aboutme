@@ -36,19 +36,19 @@ const Hero = () => {
   }, [displayText, isDeleting, roleIndex]);
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-slate-50 via-slate-100 to-slate-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-blue-900/20 dark:to-purple-900/20">
       {/* Subtle Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-slate-200/30 dark:bg-slate-700/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-slate-300/20 dark:bg-slate-600/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200/30 dark:bg-blue-800/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-200/20 dark:bg-purple-800/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className={`text-center lg:text-left transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {/* Subtle availability indicator */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 rounded-full text-sm mb-6 border border-slate-200 dark:border-slate-700">
-              <span className="w-2 h-2 bg-emerald-500 rounded-full"></span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm mb-6 border border-blue-200 dark:border-blue-700/50">
+              <span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>
               <span>Available for select collaborations</span>
             </div>
 
@@ -57,7 +57,7 @@ const Hero = () => {
             </h1>
 
             <div className="text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-600 dark:text-slate-300 mb-6 h-12">
-              <span className="border-r-2 border-slate-600 dark:border-slate-400 pr-1">{displayText}</span>
+              <span className="border-r-2 border-blue-600 dark:border-purple-400 pr-1">{displayText}</span>
             </div>
 
             <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
@@ -67,7 +67,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <a
                 href="#projects"
-                className="px-8 py-3 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold rounded-lg hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors shadow-lg"
+                className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-blue-600/30 transition-colors"
               >
                 View Projects
               </a>
@@ -101,30 +101,31 @@ const Hero = () => {
           <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="relative w-72 h-72 md:w-96 md:h-96 mx-auto">
               {/* Subtle Rings */}
-              <div className="absolute inset-0 border border-slate-200 dark:border-slate-700 rounded-full"></div>
-              <div className="absolute inset-4 border border-slate-300 dark:border-slate-600 rounded-full"></div>
-              <div className="absolute inset-8 border border-slate-400 dark:border-slate-500 rounded-full"></div>
+              <div className="absolute inset-0 border border-blue-200 dark:border-blue-700/50 rounded-full"></div>
+              <div className="absolute inset-4 border border-blue-300 dark:border-purple-600/50 rounded-full"></div>
+              <div className="absolute inset-8 border border-blue-400 dark:border-purple-500/50 rounded-full"></div>
 
-              {/* Center Content */}
-              <div className="absolute inset-12 bg-gradient-to-br from-slate-800 to-slate-900 dark:from-slate-200 dark:to-slate-300 rounded-full flex items-center justify-center shadow-2xl">
-                <div className="text-white dark:text-slate-900 text-center">
-                  <div className="text-5xl font-bold mb-1">JB</div>
-                  <div className="text-xs opacity-80">Sanofi AI CoE</div>
-                </div>
+              {/* Headshot */}
+              <div className="absolute inset-12 rounded-full overflow-hidden shadow-2xl border-4 border-white dark:border-slate-700">
+                <img
+                  src="/headshot.jpg"
+                  alt="Jonathan Broadbent"
+                  className="w-full h-full object-cover"
+                />
               </div>
 
               {/* Floating Icons */}
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2 p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg animate-float border border-slate-200 dark:border-slate-700">
-                <Microscope className="w-6 h-6 text-slate-700 dark:text-slate-300" />
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-2 p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg animate-float border border-blue-200 dark:border-blue-700/50">
+                <Microscope className="w-6 h-6 text-blue-600 dark:text-blue-400" />
               </div>
-              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2 p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg animate-float border border-slate-200 dark:border-slate-700" style={{ animationDelay: '0.5s' }}>
-                <LineChart className="w-6 h-6 text-slate-600 dark:text-slate-400" />
+              <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2 p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg animate-float border border-purple-200 dark:border-purple-700/50" style={{ animationDelay: '0.5s' }}>
+                <LineChart className="w-6 h-6 text-purple-600 dark:text-purple-400" />
               </div>
-              <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-2 p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg animate-float border border-slate-200 dark:border-slate-700" style={{ animationDelay: '1s' }}>
-                <Brain className="w-6 h-6 text-slate-500 dark:text-slate-500" />
+              <div className="absolute top-1/2 left-0 -translate-y-1/2 -translate-x-2 p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg animate-float border border-indigo-200 dark:border-indigo-700/50" style={{ animationDelay: '1s' }}>
+                <Brain className="w-6 h-6 text-indigo-600 dark:text-indigo-400" />
               </div>
-              <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-2 p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg animate-float border border-slate-200 dark:border-slate-700" style={{ animationDelay: '1.5s' }}>
-                <Database className="w-6 h-6 text-slate-400 dark:text-slate-600" />
+              <div className="absolute top-1/2 right-0 -translate-y-1/2 translate-x-2 p-3 bg-white dark:bg-slate-800 rounded-full shadow-lg animate-float border border-blue-200 dark:border-blue-700/50" style={{ animationDelay: '1.5s' }}>
+                <Database className="w-6 h-6 text-blue-500 dark:text-blue-400" />
               </div>
             </div>
           </div>
