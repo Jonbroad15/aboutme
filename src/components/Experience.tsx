@@ -82,9 +82,9 @@ const Experience = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className={`text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            Work <span className="text-blue-600">Experience</span>
+            Work <span className="text-slate-700 dark:text-slate-300">Experience</span>
           </h2>
-          <div className={`w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}></div>
+          <div className={`w-20 h-1 bg-slate-900 dark:bg-white mx-auto rounded-full transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}></div>
         </div>
 
         <div className="relative">
@@ -101,20 +101,20 @@ const Experience = () => {
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
                 {/* Timeline Dot */}
-                <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-blue-600 rounded-full transform md:-translate-x-1/2 -translate-y-1 mt-6 shadow-lg"></div>
+                <div className="absolute left-0 md:left-1/2 w-4 h-4 bg-slate-900 dark:bg-white rounded-full transform md:-translate-x-1/2 -translate-y-1 mt-6 shadow-lg"></div>
 
                 {/* Content */}
                 <div className={`flex-1 ml-8 md:ml-0 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-                  <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+                  <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-6 border border-slate-100 dark:border-slate-700 hover:shadow-lg transition-all duration-300">
                     <div className="flex items-start gap-4 mb-4">
-                      <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                        <Briefcase className="w-6 h-6 text-blue-600" />
+                      <div className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg">
+                        <Briefcase className="w-6 h-6 text-slate-700 dark:text-slate-300" />
                       </div>
                       <div className="flex-1">
                         <h3 className="text-xl font-bold text-slate-900 dark:text-white">
                           {exp.title}
                         </h3>
-                        <p className="text-blue-600 font-semibold">{exp.company}</p>
+                        <p className="text-slate-700 dark:text-slate-300 font-semibold">{exp.company}</p>
                         <div className="flex flex-wrap gap-4 mt-2 text-sm text-slate-500 dark:text-slate-400">
                           <span className="flex items-center gap-1">
                             <Calendar size={14} />
@@ -129,8 +129,8 @@ const Experience = () => {
                     </div>
                     <ul className="space-y-2 mb-4">
                       {exp.description.map((desc, i) => (
-                        <li key={i} className="text-slate-600 dark:text-slate-400 flex gap-2">
-                          <span className="text-blue-600 mt-1.5">
+                        <li key={i} className="text-slate-600 dark:text-slate-400 flex gap-2 text-sm">
+                          <span className="text-slate-700 dark:text-slate-300 mt-1.5">
                             <svg className="w-2 h-2" fill="currentColor" viewBox="0 0 8 8">
                               <circle cx="4" cy="4" r="3" />
                             </svg>

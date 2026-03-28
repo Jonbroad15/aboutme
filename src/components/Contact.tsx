@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Linkedin, Github } from 'lucide-react';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -67,8 +67,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Linkedin, href: 'https://linkedin.com/in/jonathanbroadbent15', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' }
+    { icon: Github, href: 'https://github.com/Jonbroad15', label: 'GitHub' }
   ];
 
   return (
@@ -76,18 +75,18 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className={`text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            Get In <span className="text-blue-600">Touch</span>
+            Get In <span className="text-slate-700 dark:text-slate-300">Touch</span>
           </h2>
-          <div className={`w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}></div>
+          <div className={`w-20 h-1 bg-slate-900 dark:bg-white mx-auto rounded-full transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}></div>
           <p className={`mt-6 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            Interested in collaborating on computational biology, AI in healthcare, or data science projects? I'd love to hear from you.
+            Interested in discussing computational biology, AI in healthcare, or data science opportunities? I'd be happy to connect.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className={`space-y-8 transition-all duration-700 delay-400 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
-            <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg">
+            <div className="bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-100 dark:border-slate-700">
               <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6">
                 Contact Information
               </h3>
@@ -96,10 +95,10 @@ const Contact = () => {
                   <a
                     key={index}
                     href={info.href}
-                    className="flex items-center gap-4 p-4 bg-slate-50 dark:bg-slate-900 rounded-xl hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors group"
+                    className="flex items-center gap-4 p-4 bg-slate-50 dark:bg-slate-900 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors group"
                   >
-                    <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg group-hover:bg-blue-600 transition-colors">
-                      <info.icon className="w-6 h-6 text-blue-600 group-hover:text-white transition-colors" />
+                    <div className="p-3 bg-slate-100 dark:bg-slate-800 rounded-lg group-hover:bg-slate-200 dark:group-hover:bg-slate-600 transition-colors">
+                      <info.icon className="w-6 h-6 text-slate-600 dark:text-slate-400 group-hover:text-slate-900 dark:group-hover:text-white transition-colors" />
                     </div>
                     <div>
                       <p className="text-sm text-slate-500 dark:text-slate-400">{info.label}</p>
@@ -110,9 +109,9 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
-              <h3 className="text-xl font-bold mb-4">Connect With Me</h3>
-              <p className="text-white/80 mb-6">
+            <div className="bg-slate-900 dark:bg-white rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-white dark:text-slate-900 mb-4">Connect With Me</h3>
+              <p className="text-slate-400 dark:text-slate-600 mb-6">
                 Follow me on social media to stay updated with my latest research and projects in computational biology and AI healthcare.
               </p>
               <div className="flex gap-4">
@@ -122,10 +121,10 @@ const Contact = () => {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-white/20 rounded-lg hover:bg-white/30 transition-colors"
+                    className="p-3 bg-white/10 dark:bg-slate-900/10 rounded-lg hover:bg-white/20 dark:hover:bg-slate-900/20 transition-colors"
                     aria-label={social.label}
                   >
-                    <social.icon className="w-6 h-6" />
+                    <social.icon className="w-6 h-6 text-white dark:text-slate-900" />
                   </a>
                 ))}
               </div>
@@ -133,7 +132,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className={`bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
+          <div className={`bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-100 dark:border-slate-700 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-6">
               Send a Message
             </h3>
@@ -155,7 +154,7 @@ const Contact = () => {
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all text-slate-900 dark:text-white"
+                    className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-slate-900 dark:focus:ring-white focus:border-transparent outline-none transition-all text-slate-900 dark:text-white"
                     placeholder="Your Name"
                   />
                 </div>
@@ -168,7 +167,7 @@ const Contact = () => {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all text-slate-900 dark:text-white"
+                    className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-slate-900 dark:focus:ring-white focus:border-transparent outline-none transition-all text-slate-900 dark:text-white"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -183,8 +182,8 @@ const Contact = () => {
                   required
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all text-slate-900 dark:text-white"
-                  placeholder="Collaboration Opportunity"
+                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-slate-900 dark:focus:ring-white focus:border-transparent outline-none transition-all text-slate-900 dark:text-white"
+                  placeholder="Discussion about..."
                 />
               </div>
 
@@ -197,7 +196,7 @@ const Contact = () => {
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent outline-none transition-all resize-none text-slate-900 dark:text-white"
+                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-lg focus:ring-2 focus:ring-slate-900 dark:focus:ring-white focus:border-transparent outline-none transition-all resize-none text-slate-900 dark:text-white"
                   placeholder="Let's connect about..."
                 />
               </div>
@@ -205,7 +204,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/30 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-slate-900 font-semibold rounded-lg hover:bg-slate-800 dark:hover:bg-slate-100 transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 {isSubmitting ? (
                   <>
