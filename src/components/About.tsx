@@ -45,9 +45,9 @@ const About = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className={`text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            About <span className="text-slate-700 dark:text-slate-300">Me</span>
+            About <span className="text-blue-600 dark:text-blue-400">Me</span>
           </h2>
-          <div className={`w-20 h-1 bg-slate-900 dark:bg-white mx-auto rounded-full transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}></div>
+          <div className={`w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`}></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -63,20 +63,20 @@ const About = () => {
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
-                <div className="text-3xl font-bold text-slate-900 dark:text-white mb-1">3+</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Years in Pharma AI</div>
+                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">5+</div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">Years AI for Healthcare</div>
               </div>
               <div className="p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
-                <div className="text-3xl font-bold text-slate-900 dark:text-white mb-1">5+</div>
+                <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-1">5+</div>
                 <div className="text-sm text-slate-600 dark:text-slate-400">Publications</div>
               </div>
               <div className="p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
-                <div className="text-3xl font-bold text-slate-900 dark:text-white mb-1">$12K+</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Scholarships Won</div>
+                <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-1">3</div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">Countries Worked</div>
               </div>
               <div className="p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
-                <div className="text-3xl font-bold text-slate-900 dark:text-white mb-1">3</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Countries Worked</div>
+                <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-1">2</div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">Industry Roles</div>
               </div>
             </div>
           </div>
@@ -89,8 +89,8 @@ const About = () => {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="flex-shrink-0">
-                  <div className="p-3 bg-slate-100 dark:bg-slate-600 rounded-lg">
-                    <item.icon className="w-6 h-6 text-slate-700 dark:text-slate-300" />
+                  <div className="p-3 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
+                    <item.icon className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                   </div>
                 </div>
                 <div>
