@@ -27,22 +27,32 @@ const Projects = () => {
     {
       title: 'RNAglib: RNA 2.5D Graphs',
       category: 'Bioinformatics',
-      description: 'A Python package for RNA 2.5D graphs - developing computational representations of RNA structures for AI-driven drug discovery and biological research.',
+      description: 'Curated 2.5D graph datasets for RNA structure machine learning benchmarking. A Python package for developing computational representations of RNA structures for AI-driven drug discovery.',
       tags: ['Python', 'Bioinformatics', 'RNA', 'Graph Neural Networks'],
-      github: '#',
-      demo: '#',
-      stars: 28,
-      forks: 6
+      github: 'https://github.com/Jonbroad15/RNAGlib',
+      demo: 'https://github.com/Jonbroad15/RNAGlib',
+      stars: 9,
+      forks: 1
     },
     {
-      title: 'Lipid Nanoparticle Optimization',
+      title: 'LipoBART: Lipid Nanoparticle LLM',
       category: 'Machine Learning',
-      description: 'Designed graph neural networks and LLMs to optimize lipid nanoparticles in mRNA vaccines, improving delivery efficiency and stability.',
-      tags: ['Python', 'GNNs', 'LLMs', 'mRNA Vaccines'],
-      github: '#',
+      description: 'Reproduced and extended results from Ding et al. 2023. Uses MegaMolBART embeddings for predicting LNP transfection efficiency - part of Sanofi digital R&D pipeline.',
+      tags: ['Python', 'LLMs', 'mRNA Vaccines', 'MegaMolBART'],
+      github: 'https://github.com/Sanofi-Public/LipoBART',
+      demo: 'https://doi.org/10.1093/bioinformatics/btae342',
+      stars: 18,
+      forks: 2
+    },
+    {
+      title: 'NanoMix: Nanopore Sequencing',
+      category: 'Bioinformatics',
+      description: 'Python package for analyzing nanopore sequencing data with advanced signal processing and basecalling optimization tools.',
+      tags: ['Python', 'Oxford Nanopore', 'Signal Processing', 'Sequencing'],
+      github: 'https://github.com/Jonbroad15/nanomix',
       demo: '#',
-      stars: 42,
-      forks: 11
+      stars: 20,
+      forks: 5
     },
     {
       title: 'Liquid Biopsy Cancer Detection',
@@ -55,6 +65,16 @@ const Projects = () => {
       forks: 14
     },
     {
+      title: 'MolQuery: Lipid Synthesizability',
+      category: 'Machine Learning',
+      description: 'Active learning framework for predicting lipid synthesizability. Developed at Sanofi for accelerating LNP design workflows.',
+      tags: ['Python', 'Active Learning', 'Lipid Design', 'ML'],
+      github: '#',
+      demo: 'https://doi.org/10.1021/acsomega.5c09931',
+      stars: 0,
+      forks: 0
+    },
+    {
       title: 'Generative AI Document Review',
       category: 'Natural Language',
       description: 'Built a Generative AI application for automated promotional document review, enhancing operational efficiency and accuracy in pharmaceutical compliance.',
@@ -63,26 +83,6 @@ const Projects = () => {
       demo: '#',
       stars: 38,
       forks: 9
-    },
-    {
-      title: 'Sound-Based Animal Behavior Analysis',
-      category: 'Data Analysis',
-      description: 'Developed spatial heat maps and correlation analysis using sound camera data to detect feeding patterns in livestock for farm optimization.',
-      tags: ['Python', 'Signal Processing', 'Data Visualization', 'Azure'],
-      github: '#',
-      demo: '#',
-      stars: 22,
-      forks: 5
-    },
-    {
-      title: 'Real-World Data Clinical Studies',
-      category: 'Data Analysis',
-      description: 'Data-driven clinical study design using real-world data (RWD) to inform clinical decision-making and accelerate therapeutic development.',
-      tags: ['Python', 'RWD', 'Clinical Data', 'Analytics'],
-      github: '#',
-      demo: '#',
-      stars: 31,
-      forks: 8
     }
   ];
 

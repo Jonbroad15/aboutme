@@ -4,6 +4,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import Publications from './components/Publications';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
@@ -33,6 +34,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
+        <Publications />
         <Education />
         <Contact />
       </main>
@@ -41,8 +43,8 @@ function App() {
           <p className="text-slate-400">© 2024 Jonathan Broadbent. All rights reserved.</p>
           <div className="flex justify-center gap-6 mt-4">
             <a href="https://linkedin.com/in/jonathanbroadbent15" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">LinkedIn</a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">GitHub</a>
-            <a href="mailto:jonathan.broadbent@email.com" className="text-slate-400 hover:text-white transition-colors">Email</a>
+            <a href="https://github.com/Jonbroad15" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">GitHub</a>
+            <a href="mailto:jonbroad15@gmail.com" className="text-slate-400 hover:text-white transition-colors">Email</a>
           </div>
         </div>
       </footer>
