@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Database, LineChart, Brain, Microscope } from 'lucide-react';
+import headshotImage from '/headshot.jpg';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -108,7 +109,7 @@ const Hero = () => {
               {/* Headshot */}
               <div className="absolute inset-12 rounded-full overflow-hidden shadow-2xl border-4 border-white dark:border-slate-700">
                 <img
-                  src="/headshot.jpg"
+                  src={headshotImage}
                   alt="Jonathan Broadbent"
                   className="w-full h-full object-cover"
                 />
