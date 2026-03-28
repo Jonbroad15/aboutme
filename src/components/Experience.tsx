@@ -35,7 +35,7 @@ const Experience = () => {
         'Mentoring junior team members and collaborating with stakeholders across departments.'
       ],
       technologies: ['Python', 'PyTorch', 'Graph Neural Networks', 'LLMs', 'Transformers'],
-      logo: 'public/logos/sanofi.svg'
+      logo: '/logos/sanofi.svg'
     },
     {
       title: 'Data Scientist (Catalyst Rotation Program)',
