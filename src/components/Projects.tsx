@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { ExternalLink, Github, Star, GitFork } from 'lucide-react';
+import liquidBiopsyImg from '/projects/liquid_biopsy.webp';
+import lnpVaccineImg from '/projects/lnp_vaccine.webp';
+import rnaglibImg from '/projects/rnaglib_hero.webp';
+import solvformerImg from '/projects/genai_doc_review.webp';
+import genaiDocImg from '/projects/rwd_analytics.webp';
+import rwdImg from '/projects/computational_research.webp';
 
 const Projects = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -33,7 +39,7 @@ const Projects = () => {
       demo: '#',
       stars: 55,
       forks: 14,
-      image: '/projects/liquid_biopsy.webp'
+      image: liquidBiopsyImg
     },
     {
       title: 'Lipid Nanoparticle Optimization',
@@ -44,7 +50,7 @@ const Projects = () => {
       demo: '#',
       stars: 42,
       forks: 11,
-      image: '/projects/lnp_vaccine.webp'
+      image: lnpVaccineImg
     },
     {
       title: 'RNAglib: RNA 2.5D Graphs',
@@ -55,7 +61,7 @@ const Projects = () => {
       demo: '#',
       stars: 28,
       forks: 6,
-      image: '/projects/rnaglib_hero.webp'
+      image: rnaglibImg
     },
     {
       title: 'Solvformer: Solvent Property Prediction',
@@ -66,7 +72,7 @@ const Projects = () => {
       demo: '#',
       stars: 35,
       forks: 8,
-      image: '/projects/genai_doc_review.webp'
+      image: solvformerImg
     },
     {
       title: 'Generative AI Document Review',
@@ -77,7 +83,7 @@ const Projects = () => {
       demo: '#',
       stars: 38,
       forks: 9,
-      image: '/projects/rwd_analytics.webp'
+      image: genaiDocImg
     },
     {
       title: 'Real-World Data Clinical Studies',
@@ -88,7 +94,7 @@ const Projects = () => {
       demo: '#',
       stars: 31,
       forks: 8,
-      image: '/projects/computational_research.webp'
+      image: rwdImg
     }
   ];
 

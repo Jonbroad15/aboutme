@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
+import sanofiLogo from '/logos/sanofi.svg';
+import oicrLogo from '/logos/oicr.png';
+import nutrecoLogo from '/logos/nutreco.png';
 
 const Experience = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -35,7 +38,7 @@ const Experience = () => {
         'Mentoring junior team members and collaborating with stakeholders across departments.'
       ],
       technologies: ['Python', 'PyTorch', 'Graph Neural Networks', 'LLMs', 'Transformers'],
-      logo: '/logos/sanofi.svg'
+      logo: sanofiLogo
     },
     {
       title: 'Data Scientist (Catalyst Rotation Program)',
@@ -49,7 +52,7 @@ const Experience = () => {
         'Built a PoC for Generative AI application to support Eco-Design reports in manufacturing.'
       ],
       technologies: ['Python', 'Scikit-learn', 'Generative AI', 'Real-World Data', 'Azure'],
-      logo: '/logos/sanofi.svg'
+      logo: sanofiLogo
     },
     {
       title: 'Computational Biologist',
@@ -63,7 +66,7 @@ const Experience = () => {
         'Implemented computational models to improve detection of early-stage cancer biomarkers.'
       ],
       technologies: ['Oxford Nanopore', 'Nextflow', 'Rust', 'Python', 'HPC Computing'],
-      logo: '/logos/oicr.png'
+      logo: oicrLogo
     },
     {
       title: 'Data Science Intern',
@@ -77,7 +80,7 @@ const Experience = () => {
         'Developed spatial heat maps and correlation analysis between sound distribution and feeding times.'
       ],
       technologies: ['Python', 'Scikit-learn', 'XGBoost', 'Azure', 'Data Lakes'],
-      logo: '/logos/nutreco.png'
+      logo: nutrecoLogo
     }
   ];
 
