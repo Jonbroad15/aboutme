@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Briefcase, Calendar, MapPin } from 'lucide-react';
-import sanofiLogo from '/logos/sanofi.svg';
+import sanofiLogo from '/logos/sanofi.webp';
 import oicrLogo from '/logos/oicr.png';
 import nutrecoLogo from '/logos/nutreco.png';
 

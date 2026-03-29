@@ -31,11 +31,11 @@ function App() {
       <main>
         <Hero />
         <About />
-        <Skills />
         <Experience />
         <Projects />
         <Publications />
         <Education />
+        <Skills />
         <Contact />
       </main>
       <footer className="bg-slate-900 text-white py-8">
