@@ -40,6 +40,24 @@ const Publications = () => {
       doi: '10.1021/acsomega.5c09931',
       impact: 'ACS Omega (ACS Publications)',
       highlights: ['Active learning', 'Lipid synthesizability', 'Sanofi R&D']
+    },
+    {
+      title: 'RNAglib: a python package for RNA 2.5D graphs',
+      authors: 'Mallet V, Oliver C, Broadbent J, Hamilton WL, Waldispühl J.',
+      journal: 'Bioinformatics',
+      year: '2022',
+      doi: '10.1093/bioinformatics/btab844',
+      impact: 'Bioinformatics (Oxford Academic)',
+      highlights: ['RNA 3D structure', 'Graph neural networks', 'Drug discovery']
+    },
+    {
+      title: 'Solvaformer: Minimizing Geometric Redundancy for Scalable Solubility Prediction',
+      authors: 'Broadbent J, Bailey M, Li M, Paul A, de Lescure L, Chauvin P, Kogler Anele L, Jangjou Y, Jager S.',
+      journal: 'ICLR GRaM Workshop',
+      year: '2026',
+      url: 'https://openreview.net/forum?id=AeVrMlfnkz',
+      impact: 'ICLR 2026 Workshop on Geometry-grounded Representation Learning and Generative Modeling',
+      highlights: ['Equivariant networks', 'Molecular solubility', 'Geometric deep learning']
     }
   ];
 
@@ -115,15 +133,15 @@ const Publications = () => {
                     ))}
                   </div>
 
-                  {pub.doi && (
+                  {(pub.doi || pub.url) && (
                     <a
-                      href={`https://doi.org/${pub.doi}`}
+                      href={pub.doi ? `https://doi.org/${pub.doi}` : pub.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors"
                     >
                       <ExternalLink size={16} />
-                      <span>Read Paper (DOI)</span>
+                      <span>Read Paper{pub.doi ? ' (DOI)' : ''}</span>
                     </a>
                   )}
                 </div>

@@ -67,7 +67,7 @@ const About = () => {
                 <div className="text-sm text-slate-600 dark:text-slate-400">Years AI for Healthcare</div>
               </div>
               <div className="p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
-                <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-1">5+</div>
+                <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-1">4</div>
                 <div className="text-sm text-slate-600 dark:text-slate-400">Publications</div>
               </div>
               <div className="p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
@@ -76,7 +76,7 @@ const About = () => {
               </div>
               <div className="p-4 bg-white dark:bg-slate-700 rounded-lg border border-slate-100 dark:border-slate-600">
                 <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-1">2</div>
-                <div className="text-sm text-slate-600 dark:text-slate-400">Industry Roles</div>
+                <div className="text-sm text-slate-600 dark:text-slate-400">Patents</div>
               </div>
             </div>
           </div>
